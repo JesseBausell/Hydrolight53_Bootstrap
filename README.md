@@ -1,2 +1,13 @@
 # Hydrolight53_Bootstrap
 HE53_Bootstrap enables user to evaluate radiative transfer using field-measured inherent optical properties (IOPs).  The program accepts ac-s and hs6 data and performs bootstrapping with replacement to produce a series of depth-binned absorption, attenuation, and backscattering spectra. The resulting output files can be uploaded into Hydrolight for modeling radiative transfer.
+
+This python notebook ingests field-sampled IOPs (absorption, attenuation, and backscattering), and performs bootstrapping with replacement within user-specified depth-bins. Hydrolight53_Bootstrap then outputs bootstrapped, depth-binned IOPs into Hydrolight-compatible ascii files. User specifies the number of bootstrapping iterations. It is designed primarily for absorption/attenuation and backscattering data sampled with WET Labs (Seabird Scientific) ac-s meter and HOBI Labs Hydroscat-6 (hs6). Although not tested with Hydroscat-4 and Hydroscat-2, I am reasonably confident that Hydrolight53_Bootstrap will work with these platforms as well. Prior to use, data should be processed using acsPROCESS_INTERACTIVE/acsPROCESS_SEABASS (ac-s) or hs6PROCESS_INTERACTIVE/hs6PROCESS_SEABASS. We are also reasonably confident however, that this code is also compatible with much of the absorption/attenuation and particulate backscattering data posted on NASA's SeaBaSS database. Bootstrapping protocols are described in Bausell et al. (2019).
+
+Hydrolight53_Bootstrap was written for use on a mac, but assuming that users will run Hydrolight on a pc. However, should this not be the case, code should be easily alterable to remedy this issue (I apologize for not getting around to it myself). Once the program is initiated, user is prompted to select an input file in which he/she has previously stated settings for running Hydrolight. We describe this file below and include template (Hydrolight53_Bootstrap_UserTemplate.txt) to assist the user.
+
+Hydrolight53_Bootstrap produces three types of outputs: 
+  1. Hydrolight-compabible bootstrapped absorption/attenutation files
+  2. Hydrolight-compabible bootstrapped backscattering files, 
+  3. Hydroligth batch files used for running these data and completing radiative transfer
+  
+Each bootstrapping iteration produces a triplet of the above-mentioned files, which are sorted in three folders and placed in the same pathway as the field-sampled ac-s data. Before running Hydrolight, these folders (along with field-sampled above-water solar irradiance) should be moved mannually into the appropriate pathways as indicated by batch files so that Hydrolight can locate them.
