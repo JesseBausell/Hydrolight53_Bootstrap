@@ -17,12 +17,12 @@ Settings:
 	!! Do not include units in inputs below!!
 ##### Do not alter text above #####
 
-Station Name: Station#
+Station Name: OCEANIA18
 acs file*: /ac-s/file/pathway/acs_dataFILE.txt or acs_dataFILE.h5
 hs6 file*: /hs6/file/pathway/hs6_dataFILE.txt or hs6_dataFILE.h5
 acs pathway**: \Future\pathway4\bootstrapped\Hydrolight-compatible\acsFILES\
 hs6 pathway**: \Future\pathway4\bootstrapped\Hydrolight-compatible\hs6FILES\
-Solar Irradiance file: \Future\pathway4\Hydrolight-compatible\SolarIrradiance\solar_irradiances.txt
+Solar Irradiance file: Fieldsolar_irradiances.txt (file only. DO NOT include pathway)
 Chl Conc (mg/L): #.#
 Wavelengths***: ###:#:### or ###, ###, ### (select format, decimals OK)
 Date (mm-dd-yyyy): ##-##-####
