@@ -52,3 +52,9 @@ Wind Speed (m/s): Numerical value in meters per second.
 Depth Bin Size (m): Enter numerical depth bin in meters. This value need not be an integer.
 Max Depth (m): Enter numerical maximum depth in meters. This value need not be an integer, but should be divisible by Depth Bin Size.
 Bootstrap Iterations: Enter the number of bootstrap iterations. This value MUST be an integer.
+
+Bibliography:
+
+1. Bausell, J. & R. Kudela (2019) Comparison of two in-water optical profilers in a dynamic coastal marine ecosystem. Applied Optics: 58(27): 7319-7330.
+
+2. Doxaran, D. & E. Leymarie (2016) Improved correction methods for field measurements of particulate light backscattering in turbid waters. Optical Society of America: 24(4): 1-23
