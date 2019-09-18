@@ -1,0 +1,2 @@
+# Hydrolight53_Bootstrap
+HE53_Bootstrap enables user to evaluate radiative transfer using field-measured inherent optical properties (IOPs).  The program accepts ac-s and hs6 data and performs bootstrapping with replacement to produce a series of depth-binned absorption, attenuation, and backscattering spectra. The resulting output files can be uploaded into Hydrolight for modeling radiative transfer.
