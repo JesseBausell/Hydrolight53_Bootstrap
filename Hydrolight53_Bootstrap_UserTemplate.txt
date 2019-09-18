@@ -1,0 +1,50 @@
+Template is designed for use with HE53_Bootstrap
+Provided by Jesse Bausell (Ph.D Candidate), Kudela Lab, University of California, Santa Cruz
+##### Do not alter text below #####
+Template: Hydrolight 5.3 
+Settings:
+	User-supplied IOPs
+	Forand-Fournier Phase Function
+	Include Chlorophyll Fluorescence - yes 
+		Chlorophyll is constant with depth
+		Chlorophyll-based model for Cast 1 water
+	Include CDOM Fluorescence - No
+	Include Raman Scattering - No
+	Real Index of refraction (n = -1.34)
+	Solar Irradiance - semi-empirical sky model w/ user-supplied irradiances
+	Seafloor - infinitely deep
+	User-supplied meteorological and oceanographical measurements (see below)
+	!! Do not include units in inputs below!!
+##### Do not alter text above #####
+
+Station Name: Station#
+acs file*: /ac-s/file/pathway/acs_dataFILE.txt or acs_dataFILE.h5
+hs6 file*: /hs6/file/pathway/hs6_dataFILE.txt or hs6_dataFILE.h5
+acs pathway**: \Future\pathway4\bootstrapped\Hydrolight-compatible\acsFILES\
+hs6 pathway**: \Future\pathway4\bootstrapped\Hydrolight-compatible\hs6FILES\
+Solar Irradiance file: \Future\pathway4\Hydrolight-compatible\SolarIrradiance\solar_irradiances.txt
+Chl Conc (mg/L): #.#
+Wavelengths***: ###:#:### or ###, ###, ### (select format, decimals OK)
+Date (mm-dd-yyyy): ##-##-####
+GMT (HH:MM:SS): ##:##:##
+Water Temperature (deg. C): ##.#
+Salinity (PSU): 3#.#
+Latitude****: ##.##
+Longitude****: ##.##
+Pressure (inHg): ##.#
+Humidity (%): ##.#
+Precipitable Water Content (cm): #.#
+Horizontal Visibility (km): #.#
+c-interpolation: yes/no (select one)
+Doxaran-Correction: yes/no (select one)
+Wind Speed (m/s): #.#
+Depth Bin Size (m): #.#
+Max Depth (m): #.#
+Bootstrap Iterations: #
+
+####################################
+* Include file AND pathway. File can be a Seabass-formatted .txt file or a hdf5/mat file  
+** Pathways indicating location of Hydrolight-compatible ac-s & hs6 bootstrapped files. 
+These pathways will be printed into batch files
+*** Wavelengths can be separated with commas or by a colon
+**** Latitude and Longitude should be in decimal format. North/East = +, South/West = -
